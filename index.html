@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absen</title>
+</head>
+
+<body>
+    <!-- ganti src url dengan url form anda -->
+    <iframe id="absen"
+     src="https://docs.google.com/forms/d/e/1FAIpQLSeRa9BIox1gGztRC-qM_nZYakQUL0mfhTOvMfQMvL_7Eml1Lw/viewform?embedded=true" 
+    width="640" height="504" frameborder="0" marginheight="0" marginwidth="0">Memuat…</iframe>
+
+    <script type="text/javascript">
+        var load = 0;
+        // sesuaikan id gform dengan id yang ada pada tag iframe di atas
+        document.getElementById('absen').onload = function () {
+            load++;
+            if (load > 3) {
+                // ganti url dibawah dengan url webapp anda
+                document.location = "https://script.google.com/macros/s/AKfycbw46TlIaANyQWFmOLsu2vJzTD-xOVjvWiZ5rh_9lgHWPAv_CpjVK_9QdjNmT48xy6jq/exec";
+
+            }
+        }
+    </script>
+</body>
+
+</html>
